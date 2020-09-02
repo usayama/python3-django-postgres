@@ -103,7 +103,7 @@ http://localhost:8000/cpanel/api/v1/main_plan_estimates/1111111111111111/export/
 http://localhost:8000/cpanel/api/v1/add_option_estimates/2222222222222222/export/?customer_name=shiken&raw_output=1&develop.member_id=abc01234&develop.account_code=test_account
 
 # 新規追加申込書
-http://localhost:8000/cpanel/api/v1/main_plan_estimates/1111111111111111/export/?customer_name=shiken
+http://localhost:8000/cpanel/api/v1/export_order_form/1111111111111111/?raw_output=1&develop.member_id=abc01234&develop.account_code=test_account
 ```
 
 
