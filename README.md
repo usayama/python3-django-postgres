@@ -53,13 +53,13 @@ http://localhost:8000
 
 #### ビルド
 
-```bash
+```
 $ docker-compose build
 ```
 
 #### GitのAPIリポジトリをクローン
 
-```bash
+```
 $ git clone git@github.sakura.codes:ds/ds-phy-api.git
 ```
 
@@ -71,32 +71,39 @@ ds-phy-api → app
 
 #### マイグレーション
 
-```bash
+```
 $ docker-compose run web python app/django/manage.py makemigrations baseapp
 ```
 
 #### マイグレート
 
-```bash
+```
 $ docker-compose run web python app/django/manage.py migrate
 ```
 
 #### ロードデータ
 
-```bash
+```
 $ docker-compose run web python app/django/manage.py loaddata app/django/baseapp/fixtures/*.yaml
 ```
 
 #### サーバー起動
 
-```bash
+```
 $ docker-compose up
 ```
 
 #### ブラウザでアクセス
 
-```bash
+```
+# 新規追加見積書
 http://localhost:8000/cpanel/api/v1/main_plan_estimates/1111111111111111/export/?customer_name=shiken&inline=t
+
+# オプション追加見積書
+http://localhost:8000/cpanel/api/v1/add_option_estimates/2222222222222222/export/?customer_name=shiken&raw_output=1&develop.member_id=abc01234&develop.account_code=test_account
+
+# 新規追加申込書
+http://localhost:8000/cpanel/api/v1/main_plan_estimates/1111111111111111/export/?customer_name=shiken
 ```
 
 
