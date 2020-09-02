@@ -1,13 +1,19 @@
 # python3-django-postgres
 Python3とPostgresのイメージをベースにDjango環境をつくる
 
-##### Djangoアプリを作成
+#### ビルド
+
+```bash
+$ docker-compose build
+```
+
+#### Djangoアプリを作成
 
 ```bash
 $ docker-compose run web django-admin startproject app .
 ```
 
-##### settings.pyを編集
+#### settings.pyを編集
 
 ```python
 # settings.py
@@ -24,19 +30,19 @@ DATABASES = {
 }
 ```
 
-##### マイグレート
+#### マイグレート
 
 ```bash
 $ docker-compose run web python manage.py migrate
 ```
 
-##### サーバー起動
+#### サーバー起動
 
 ```bash
 $ docker-compose up
 ```
 
-##### ブラウザでアクセス
+#### ブラウザでアクセス
 
 ```
 http://localhost:8000
