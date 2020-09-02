@@ -16,4 +16,4 @@ services:
     stdin_open: true
     depends_on:
       - db
-    command: python3 manage.py runserver 0.0.0.0:8000
+    command: python app/django/manage.py runserver 0.0.0.0:8000
