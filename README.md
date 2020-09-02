@@ -1,5 +1,5 @@
 # python3-django-postgres
-1日で1年分のPython3、Postgres、Djangoの修行ができる何もなくて暑い部屋
+1日で1年分のPython3、PostgreSQL、Djangoの修行ができる何もなくて暑い部屋
 
 #### ビルド
 
