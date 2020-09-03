@@ -106,4 +106,9 @@ http://localhost:8000/cpanel/api/v1/add_option_estimates/2222222222222222/export
 http://localhost:8000/cpanel/api/v1/export_order_form/1111111111111111/?raw_output=1&develop.member_id=abc01234&develop.account_code=test_account
 ```
 
+#### 申込書を目視するにはパッチをあてる
+
+```
+patch -p1 < diff.patch
+```
 
